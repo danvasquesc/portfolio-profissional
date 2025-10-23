@@ -90,11 +90,10 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  animation: fadeInUp 0.8s ease 0.4s both;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-color), #ff6b35);
+  background-color: var(--primary-color);
   color: var(--text-primary);
   box-shadow: 0 10px 30px var(--shadow-strong);
 }

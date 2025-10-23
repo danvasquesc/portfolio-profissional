@@ -1,0 +1,123 @@
+.projects {
+    background: var(--darker-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.projects .container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.projects .subtitle {
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.card {
+  background: var(--light-bg);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.6rem;
+}
+
+.btn-codigo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-codigo span {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-codigo:hover {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.btn-codigo:hover span {
+  transform: translate(3px, -3px);
+}
+
+.btn-projeto {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--text-primary);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-projeto span {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-projeto:hover {
+  background: var(--text-primary);
+  color: var(--dark-bg);
+  transform: translateY(-2px);
+}
+
+.btn-projeto:hover span {
+  transform: translate(3px, -3px);
+}
