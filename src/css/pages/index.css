@@ -1,0 +1,7 @@
+/* === Global === */
+@import url("../global/global.css");
+@import url("../global/reset.css");
+@import url("../global/variables.css");
+
+/* === Pages === */
+@import url("./nav.css");
