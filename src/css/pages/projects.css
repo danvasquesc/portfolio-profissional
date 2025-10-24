@@ -1,5 +1,5 @@
 .projects {
-    background: var(--darker-bg);
+  background: var(--darker-bg);
   color: var(--text-primary);
   min-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .projects .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
 }
@@ -22,35 +22,43 @@
 
 .projects .subtitle {
   margin-bottom: 50px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.projects strong {
+  color: var(--text-primary);
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
 .card {
   background: var(--light-bg);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 30px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px var(--shadow);
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px var(--shadow-strong);
 }
 
 .card img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .card h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
@@ -58,66 +66,108 @@
   font-size: 0.95rem;
   color: var(--text-secondary);
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .card-buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 }
 
-.btn-codigo {
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   padding: 0.6rem 1.2rem;
-  border: 2px solid var(--primary-color);
   border-radius: 8px;
-  background: transparent;
-  color: var(--primary-color);
   font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-codigo span {
   font-size: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.btn-codigo:hover {
-  background: var(--primary-color);
-  color: var(--text-primary);
-  transform: translateY(-2px);
-}
-
-.btn-codigo:hover span {
-  transform: translate(3px, -3px);
 }
 
 .btn-projeto {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.2rem;
   border: 2px solid var(--text-primary);
-  border-radius: 8px;
   background: transparent;
   color: var(--text-primary);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-projeto span {
-  font-size: 1rem;
-  transition: transform 0.3s ease;
 }
 
 .btn-projeto:hover {
   background: var(--text-primary);
   color: var(--dark-bg);
-  transform: translateY(-2px);
 }
 
-.btn-projeto:hover span {
-  transform: translate(3px, -3px);
+.btn-codigo {
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.btn-codigo:hover {
+  background: var(--primary-color);
+  color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .projects .container {
+    max-width: 900px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects .subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 40px 15px;
+  }
+
+  .projects h2 {
+    font-size: 1.75rem;
+  }
+
+  .projects .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
 }
