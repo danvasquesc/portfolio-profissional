@@ -1,40 +1,35 @@
 .extensao {
   color: var(--text-primary);
-  min-height: 100vh;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
-  overflow: hidden;
 }
 
 .extensao .container {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
-  text-align: left;
 }
 
 .extensao h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .extensao .subtitle {
   font-size: 1.2rem;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
   text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
 }
 
-.extensao p {
+.extensao-text p {
   font-size: 1.2rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
   text-align: justify;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .extensao strong {
@@ -42,15 +37,23 @@
 }
 
 .extensao ul {
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 2rem 0;
   padding-left: 20px;
-  color: var(--text-secondary);
-  line-height: 1.6;
+  list-style: none;
 }
 
 .extensao ul li {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
   text-align: justify;
+  color: var(--text-secondary);
+}
+
+.extensao ul li::before {
+  content: "• ";
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .gallery {
@@ -62,7 +65,12 @@
 
 .gallery img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
 }
 
 @media (max-width: 768px) {
@@ -71,43 +79,47 @@
   }
 
   .extensao h2 {
-    text-align: center;
     font-size: 2rem;
   }
 
   .extensao .subtitle {
-    text-align: center;
-    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .extensao p,
+  .extensao-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .extensao-text p,
   .extensao ul li {
-    font-size: 1.1rem;
-    text-align: justify;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
+  .extensao ul {
+    padding-left: 0;
+    list-style-position: inside;
   }
 
   .gallery {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 2rem;
     max-width: 600px;
-    margin: 2rem auto 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 480px) {
   .extensao {
-    padding: 40px 15px;
+    padding: 50px 15px;
   }
 
   .extensao h2 {
-    font-size: 1.75rem;
-  }
-
-  .extensao p,
-  .extensao ul li {
-    font-size: 1rem;
-  }
-
-  .gallery {
-    gap: 1rem;
+    font-size: 1.8rem;
   }
 }
