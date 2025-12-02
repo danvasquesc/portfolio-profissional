@@ -1,336 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dan Vasques | Portfolio</title>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./src/images/favicon-portfolio.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dan Vasques | Portfolio</title>
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./src/images/favicon-portfolio.png" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/css/pages/index.css" />
-  </head>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- NavBar -->
-    <header class="header" id="header">
-      <nav class="navbar">
-        <div class="container">
-          <a href="#inicio" class="logo">
-            <span class="logo-text">Dan Vasques</span>
-          </a>
-          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/pages/index.css" />
+</head>
 
-          <ul class="nav-menu" id="navMenu">
-            <li><a href="#inicio" class="nav-link">Início</a></li>
-            <li><a href="#sobre" class="nav-link">Sobre</a></li>
-            <li><a href="#projetos" class="nav-link">Projetos</a></li>
-            <li><a href="#extensao" class="nav-link">Extensão</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
+<body>
+  <!-- NavBar -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="container">
+        <a href="#inicio" class="logo">
+          <span class="logo-text">Dan Vasques</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#extensao" class="nav-link">Extensão</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Dev <span class="highlight">Full Stack</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Focado em aplicações com <strong>Java (Spring Boot)</strong> e
+            <strong>Frontend (JS/HTML/CSS)</strong>. Minha experiência em ensino e <strong>suporte técnico</strong>
+            fornece uma base sólida em <strong>resolução de problemas</strong>
+            e melhoria contínua, comprovado ao aumentar em <strong>91% a autonomia digital de equipes</strong>.
+          </p>
+
+          <a href="./src/docs/Estagio_Desenvolvimento_Software_Dan_Vasques_Carvalho.pdf" class="btn btn-primary"
+            target="_blank">Download CV</a>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-illustration">
+            <img src="./src/images/img-perfil.png" alt="Foto de perfil de Dan" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="box">
+          <h2>Desenvolvedor</h2>
+          <p>
+            No desenvolvimento backend com <strong>Java</strong> e
+            <strong>Spring Boot</strong>, utilizo ferramentas como
+            <strong>Git e Eclipse IDE</strong> e ambiente
+            <strong>Linux</strong> para construir soluções estáveis e bem
+            estruturadas. Busco desempenho, clareza e qualidade em cada linha
+            de código. Também atuo com <strong>HTML, CSS</strong> e
+            <strong>JavaScript</strong>, o que me permite compreender o
+            <strong>backend</strong> e <strong>frontend</strong> de forma
+            integrada e eficiente.
+          </p>
+        </div>
+
+        <div class="box">
+          <h2>Professor de TI</h2>
+          <p>
+            Atuo há <strong>mais de 3 anos</strong> com
+            <strong>suporte técnico</strong> e infraestrutura de TI,
+            garantindo alto desempenho. Tenho experiência em
+            diagnóstico, <strong>resolução de problemas</strong>, manutenção, formatações e
+            <strong>treinamentos</strong> para <strong>+800 usuários</strong>. Busco eficiência nos
+            processos, assegurando o funcionamento tecnológico e
+            <strong>ampliando a autonomia digital</strong> da equipe.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="projects" id="projetos">
+      <div class="container">
+        <h2>Projetos</h2>
+        <p class="subtitle">
+          Aqui estão alguns dos meus trabalhos recentes. Clique para ver a
+          demo ou acessar o código no GitHub.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./src/images/img-vasques-tech.svg" alt="Preview Projeto 1" />
+            <h3>Vasques Tech</h3>
+            <p>
+              Site criado para apresentar meus serviços de manutenção e
+              suporte técnico de notebooks, com design responsivo e canal
+              direto para orçamentos.
+              <strong>HTML5, CSS3, JavaScript, Git e VS Code.</strong>
+            </p>
+            <div class="card-buttons">
+              <a href="https://danvasquesc.github.io/vasques-tech/" target="_blank" class="btn btn-projeto">Demo</a>
+              <a href="https://github.com/danvasquesc/vasques-tech" target="_blank" class="btn btn-codigo">Código</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./src/images/img-projeto-java.svg" alt="Preview Projeto 2" />
+            <h3>Práticas em Java</h3>
+            <p>
+              Repositório com desafios para consolidar fundamentos de back-end
+              Java, aplicando boas práticas de lógica e Programação Orientada
+              a Objetos. <strong>Java, Eclipse IDE e Git.</strong>
+            </p>
+            <div class="card-buttons">
+              <a href="https://github.com/danvasquesc/exercicios_java" target="_blank" class="btn btn-codigo">Código</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./src/images/img-projeto-plataforma-escolar.svg" alt="Preview Projeto 3" />
+            <h3>Plataforma de Atividades</h3>
+            <p>
+              Aplicação web responsiva desenvolvida para facilitar o envio e
+              organização de atividades escolares digitais. Testada com
+              usuários reais. <strong>HTML5, CSS3, Git e VS Code.</strong>
+            </p>
+            <div class="card-buttons">
+              <a href="https://danvasquesc.github.io/projeto-plataforma-atividades-escolares/" target="_blank"
+                class="btn btn-projeto">Demo</a>
+              <a href="https://github.com/danvasquesc/projeto-plataforma-atividades-escolares" target="_blank"
+                class="btn btn-codigo">Código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Extensão -->
+    <section class="extensao" id="extensao">
+      <div class="container">
+        <h2>Extensão</h2>
+        <p class="subtitle">
+          <strong>Projeto de Extensão - Iniciação Tecnológica Escolar</strong>
+        </p>
+
+        <div class="extensao-text">
+          <p>
+            Iniciativa acadêmica voltada à capacitação de
+            <strong>+60 alunos do ensino médio</strong> em fundamentos de
+            <strong>programação com Python</strong> e
+            <strong>manutenção de computadores</strong>. O projeto integra
+            teoria e prática, promovendo o letramento digital e o interesse
+            pela área de TI entre jovens com pouco acesso à tecnologia.
+          </p>
+
+          <ul>
+            <li>
+              Planejamento e execução em <strong>equipe</strong> com
+              professores da área de tecnologia.
+            </li>
+            <li>
+              Aplicação prática dos conhecimentos adquiridos na graduação.
+            </li>
+            <li>
+              Projeto documentado como <strong>extensão acadêmica</strong>,
+              com potencial para programas de pós-graduação.
+            </li>
+            <li>Integração entre hardware, lógica e código.</li>
+            <li>
+              Estratégia: <strong>simplificar conceitos</strong> e trazer a
+              lógica para o cotidiano.
+            </li>
           </ul>
         </div>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Inicio -->
-      <section class="hero" id="inicio">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Dev <span class="highlight">Full Stack</span>
-            </h1>
-
-            <p class="hero-subtitle">
-              Sou focado em <strong>soluções</strong> digitais
-              <strong>sólidas</strong> e bem <strong>estruturadas</strong>,
-              buscando desempenho e qualidade. <strong>Habilidoso</strong> em
-              diagnóstico e <strong>resolução de problemas</strong> na área da
-              tecnologia.
-            </p>
-
-            <a
-              href="./src/docs/Estagio_TI_Dan_Vasques_Carvalho.pdf"
-              class="btn btn-primary"
-              target="_blank"
-              >Download CV</a
-            >
-          </div>
-
-          <div class="hero-image">
-            <div class="hero-illustration">
-              <img
-                src="./src/images/img-perfil.png"
-                alt="Foto de perfil de Dan"
-              />
-            </div>
-          </div>
+        <div class="gallery">
+          <img src="./src/images/extensao1.svg" alt="Atividade prática com alunos" />
+          <img src="./src/images/extensao2.svg" alt="Atividade prática com alunos" />
+          <img src="./src/images/extensao3.svg" alt="Atividade prática com alunos" />
+          <img src="./src/images/extensao4.svg" alt="Atividade prática com alunos" />
         </div>
-      </section>
-
-      <!-- Seção Sobre -->
-      <section class="about" id="sobre">
-        <div class="container">
-          <div class="box">
-            <h2>Desenvolvedor</h2>
-            <p>
-              No desenvolvimento backend com <strong>Java</strong> e
-              <strong>Spring Boot</strong>, utilizo ferramentas como
-              <strong>Git e Eclipse IDE</strong> e ambiente
-              <strong>Linux</strong> para construir soluções estáveis e bem
-              estruturadas. Busco desempenho, clareza e qualidade em cada linha
-              de código. Também atuo com <strong>HTML, CSS</strong> e
-              <strong>JavaScript</strong>, o que me permite compreender o
-              <strong>backend</strong> e <strong>frontend</strong> de forma
-              integrada e eficiente.
-            </p>
-          </div>
-
-          <div class="box">
-            <h2>Professor de TI</h2>
-            <p>
-              Atuo há <strong>mais de 3 anos</strong> com
-              <strong>suporte técnico</strong> e gestão de infraestrutura de TI,
-              garantindo alto desempenho. Tenho experiência em
-              <strong>diagnóstico e resolução de problemas</strong>, manutenção
-              de hardware/software, formatações e
-              <strong>treinamentos de usuários</strong>. Busco eficiência nos
-              processos, assegurando o funcionamento tecnológico e
-              <strong>ampliando a autonomia digital</strong> da equipe.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção Projetos -->
-      <section class="projects" id="projetos">
-        <div class="container">
-          <h2>Projetos</h2>
-          <p class="subtitle">
-            Aqui estão alguns dos meus trabalhos recentes. Clique para ver a
-            demo ou acessar o código no GitHub.
-          </p>
-
-          <div class="cards">
-            <div class="card">
-              <img
-                src="./src/images/img-vasques-tech.svg"
-                alt="Preview Projeto 1"
-              />
-              <h3>Vasques Tech</h3>
-              <p>
-                Site criado para apresentar meus serviços de manutenção e
-                suporte técnico de notebooks, com design responsivo e canal
-                direto para orçamentos.
-                <strong>HTML5, CSS3, JavaScript, Git e VS Code.</strong>
-              </p>
-              <div class="card-buttons">
-                <a
-                  href="https://danvasquesc.github.io/vasques-tech/"
-                  target="_blank"
-                  class="btn btn-projeto"
-                  >Demo</a
-                >
-                <a
-                  href="https://github.com/danvasquesc/vasques-tech"
-                  target="_blank"
-                  class="btn btn-codigo"
-                  >Código</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="./src/images/img-projeto-java.svg"
-                alt="Preview Projeto 2"
-              />
-              <h3>Práticas em Java</h3>
-              <p>
-                Repositório com desafios para consolidar fundamentos de back-end
-                Java, aplicando boas práticas de lógica e Programação Orientada
-                a Objetos. <strong>Java, Eclipse IDE e Git.</strong>
-              </p>
-              <div class="card-buttons">
-                <a
-                  href="https://github.com/danvasquesc/exercicios_java"
-                  target="_blank"
-                  class="btn btn-codigo"
-                  >Código</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="./src/images/img-projeto-plataforma-escolar.svg"
-                alt="Preview Projeto 3"
-              />
-              <h3>Plataforma de Atividades</h3>
-              <p>
-                Aplicação web responsiva desenvolvida para facilitar o envio e
-                organização de atividades escolares digitais. Testada com
-                usuários reais. <strong>HTML5, CSS3, Git e VS Code.</strong>
-              </p>
-              <div class="card-buttons">
-                <a
-                  href="https://danvasquesc.github.io/projeto-plataforma-atividades-escolares/"
-                  target="_blank"
-                  class="btn btn-projeto"
-                  >Demo</a
-                >
-                <a
-                  href="https://github.com/danvasquesc/projeto-plataforma-atividades-escolares"
-                  target="_blank"
-                  class="btn btn-codigo"
-                  >Código</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção Extensão -->
-      <section class="extensao" id="extensao">
-        <div class="container">
-          <h2>Extensão</h2>
-          <p class="subtitle">
-            <strong>Projeto de Extensão - Iniciação Tecnológica Escolar</strong>
-          </p>
-
-          <div class="extensao-text">
-            <p>
-              Iniciativa acadêmica voltada à capacitação de
-              <strong>+60 alunos do ensino médio</strong> em fundamentos de
-              <strong>programação com Python</strong> e
-              <strong>manutenção de computadores</strong>. O projeto integra
-              teoria e prática, promovendo o letramento digital e o interesse
-              pela área de TI entre jovens com pouco acesso à tecnologia.
-            </p>
-
-            <ul>
-              <li>
-                Planejamento e execução em <strong>equipe</strong> com
-                professores da área de tecnologia.
-              </li>
-              <li>
-                Aplicação prática dos conhecimentos adquiridos na graduação.
-              </li>
-              <li>
-                Projeto documentado como <strong>extensão acadêmica</strong>,
-                com potencial para programas de pós-graduação.
-              </li>
-              <li>Integração entre hardware, lógica e código.</li>
-              <li>
-                Estratégia: <strong>simplificar conceitos</strong> e trazer a
-                lógica para o cotidiano.
-              </li>
-            </ul>
-          </div>
-
-          <div class="gallery">
-            <img
-              src="./src/images/extensao1.svg"
-              alt="Atividade prática com alunos"
-            />
-            <img
-              src="./src/images/extensao2.svg"
-              alt="Atividade prática com alunos"
-            />
-            <img
-              src="./src/images/extensao3.svg"
-              alt="Atividade prática com alunos"
-            />
-            <img
-              src="./src/images/extensao4.svg"
-              alt="Atividade prática com alunos"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Contato -->
-      <section class="contact" id="contato">
-        <div class="container">
-          <h2>Entre em Contato</h2>
-          <p class="subtitle">
-            Estou pronto para vestir a camisa e resolver problemas!
-          </p>
-
-          <div class="contact-content">
-            <div class="contact-info">
-              <!-- WhatsApp -->
-              <div class="contact-item">
-                <a
-                  href="https://wa.me/5517992297000"
-                  target="_blank"
-                  class="contact-link whatsapp"
-                >
-                  <i class="bi bi-whatsapp"></i>
-                  <h3 class="contact-label">WhatsApp</h3>
-                </a>
-              </div>
-              <!-- Email -->
-              <div class="contact-item">
-                <a
-                  href="mailto:dan.vasques@outlook.com.br"
-                  class="contact-link email"
-                >
-                  <i class="bi bi-envelope-at"></i>
-                  <span class="contact-label">E-mail</span>
-                </a>
-              </div>
-              <!-- LinkedIn -->
-              <div class="contact-item">
-                <a
-                  href="https://www.linkedin.com/in/dan-vasques-carvalho/"
-                  target="_blank"
-                  class="contact-link linkedin"
-                >
-                  <i class="bi bi-linkedin"></i>
-                  <span class="contact-label">LinkedIn</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p class="footer-text">
-          © 2025 Dan Vasques - Todos os direitos reservados.
-        </p>
       </div>
-    </footer>
+    </section>
 
-    <!-- JS -->
-    <script src="./src/js/pages/index.js" type="module"></script>
-  </body>
+    <!-- Contato -->
+    <section class="contact" id="contato">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <p class="subtitle">
+          Estou pronto para <strong>vestir a camisa</strong> e resolver problemas!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <!-- WhatsApp -->
+            <div class="contact-item">
+              <a href="https://wa.me/5517992297000" target="_blank" class="contact-link whatsapp">
+                <i class="bi bi-whatsapp"></i>
+                <h3 class="contact-label">WhatsApp</h3>
+              </a>
+            </div>
+            <!-- Email -->
+            <div class="contact-item">
+              <a href="mailto:dan.vasques@outlook.com.br" class="contact-link email">
+                <i class="bi bi-envelope-at"></i>
+                <span class="contact-label">E-mail</span>
+              </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/in/dan-vasques-carvalho/" target="_blank" class="contact-link linkedin">
+                <i class="bi bi-linkedin"></i>
+                <span class="contact-label">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2025 Dan Vasques - Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./src/js/pages/index.js" type="module"></script>
+</body>
+
 </html>
