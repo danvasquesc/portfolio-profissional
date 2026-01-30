@@ -1,7 +1,7 @@
 # 🌐 Portfólio - Dan Vasques Carvalho
 
-Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo de apresentar minha trajetória como **Desenvolvedor** e **Professor de TI**.
-O site reúne meus projetos, formações e experiências, destacando o equilíbrio entre educação, tecnologia e inovação - pilares que norteiam minha atuação profissional.
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo de apresentar minha trajetória como **Profissional de TI**.
+O site reúne meus projetos, formações e experiências, destacando o equilíbrio entre tecnologia e inovação - pilares que norteiam minha atuação profissional.
 
 <br>
 
