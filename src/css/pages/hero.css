@@ -48,15 +48,12 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.8s ease;
-}
-
-.highlight {
-  color: var(--primary-color);
 }
 
 .hero-subtitle {
